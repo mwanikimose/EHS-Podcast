@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        border-radius: 0 0 100px 0;
+        background: linear-gradient(180deg, #2f8280 0%, #1d7775 100%);
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: end;
+        padding: 0 61px 80px;
+      }
+
+      @media (max-width: 991px) {
+        .container {
+          max-width: 100%;
+          padding: 0 20px;
+        }
+      }
+
+      .logo {
+        aspect-ratio: 1.2;
+        object-fit: auto;
+        object-position: center;
+        width: 223px;
+        align-self: start;
+        z-index: 10;
+        max-width: 100%;
+      }
+
+      .nav {
+        border-radius: 100px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background-color: #1d7775;
+        z-index: 10;
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 400;
+        white-space: nowrap;
+        line-height: 120%;
+        margin: -151px 84px 0 0;
+        padding: 25px 80px;
+      }
+
+      @media (max-width: 991px) {
+        .nav {
+          margin-right: 10px;
+          flex-wrap: wrap;
+          white-space: initial;
+          padding: 0 20px;
+        }
+      }
+
+      .nav-item {
+        text-align: center;
+        font-family: Space Grotesk, sans-serif;
+      }
+
+      .nav-item-grow {
+        font-family: Space Grotesk, sans-serif;
+        flex-grow: 1;
+        flex-basis: auto;
+      }
+
+      .image-shadow {
+        aspect-ratio: 0.52;
+        object-fit: auto;
+        object-position: center;
+        width: 197px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+        border: 1px solid #000;
+        margin-top: -68px;
+        max-width: 100%;
+      }
+
+      .image-grid {
+        z-index: 10;
+        width: 411px;
+        max-width: 100%;
+        margin: -292px 206px 0 0;
+        padding: 0 1px;
+      }
+
+      @media (max-width: 991px) {
+        .image-grid {
+          margin: -200px 10px 0 0;
+        }
+      }
+
+      .image-row {
+        gap: 20px;
+        display: flex;
+      }
+
+      @media (max-width: 991px) {
+        .image-row {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 0;
+        }
+      }
+
+      .image-col {
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        width: 50%;
+        margin-left: 0;
+      }
+
+      @media (max-width: 991px) {
+        .image-col {
+          width: 100%;
+        }
+      }
+
+      .image-border-white {
+        aspect-ratio: 0.52;
+        object-fit: auto;
+        object-position: center;
+        width: 197px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+        border: 1px solid #fff;
+        max-width: 100%;
+      }
+
+      .image-margin-top {
+        margin-top: 102px;
+        flex-grow: 1;
+      }
+
+      @media (max-width: 991px) {
+        .image-margin-top {
+          margin-top: 40px;
+        }
+      }
+
+      .image-margin-left {
+        margin-left: 20px;
+      }
+
+      @media (max-width: 991px) {
+        .image-margin-top-small {
+          margin-top: 16px;
+        }
+      }
+
+      .hero-content {
+        align-self: start;
+        z-index: 10;
+        display: flex;
+        width: 555px;
+        max-width: 100%;
+        flex-direction: column;
+        margin: -387px 0 33px 116px;
+      }
+
+      @media (max-width: 991px) {
+        .hero-content {
+          margin-top: -200px;
+        }
+      }
+
+      .hero-title {
+        color: #fffdfd;
+        text-align: center;
+        letter-spacing: -1.08px;
+        font: 500 54px/50px Space Grotesk, -apple-system, Roboto, Helvetica,
+          sans-serif;
+      }
+
+      @media (max-width: 991px) {
+        .hero-title {
+          max-width: 100%;
+          font-size: 40px;
+          line-height: 41px;
+        }
+      }
+
+      .hero-description {
+        color: #fff;
+        letter-spacing: -0.58px;
+        text-transform: lowercase;
+        margin-top: 29px;
+        font: 347 29px/40px Space Grotesk, -apple-system, Roboto, Helvetica,
+          sans-serif;
+      }
+
+      @media (max-width: 991px) {
+        .hero-description {
+          max-width: 100%;
+        }
+      }
+
+      .arrow-icon {
+        aspect-ratio: 0.19;
+        object-fit: auto;
+        object-position: center;
+        width: 15px;
+        stroke-width: 2px;
+        stroke: #fff;
+        border: 2px solid #fff;
+        align-self: center;
+        margin-top: 30px;
+      }
+    </style>
+
+    <header class="container">
+      <img
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b6dd555fff0e1aaa04cb78b5de702d624f2099bcbd9183a8c87b58d960d01881?apiKey=07656cc1070a4998b9b70b949180a7c6&"
+        alt="Logo"
+        class="logo"
+        loading="lazy"
+      />
+
+      <nav class="nav">
+        <a href="#" class="nav-item">About</a>
+        <a href="#" class="nav-item">Podcasts</a>
+        <a href="#" class="nav-item">Projects</a>
+        <a href="#" class="nav-item nav-item-grow">Appreciation</a>
+      </nav>
+
+      <img
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/3a1e3c162ac692ca14b9a53b97adbeda71c663826be2eb1896ff4112d6fff25a?apiKey=07656cc1070a4998b9b70b949180a7c6&"
+        alt="Shadow Image"
+        class="image-shadow"
+        loading="lazy"
+      />
+    </header>
+
+    <main>
+      <section class="image-grid">
+        <div class="image-row">
+          <div class="image-col">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/e0bef70d3bec1e1eaa6c1a964d91de2482a1cfa3cf621e29143e5b6c29990739?apiKey=07656cc1070a4998b9b70b949180a7c6&"
+              alt="Image"
+              class="image-border-white image-margin-top"
+              loading="lazy"
+            />
+          </div>
+          <div class="image-col image-margin-left">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/54a01e9cc55ee21056f5ba50f174b09e0118d5ba567040253db3992dc1f5c802?apiKey=07656cc1070a4998b9b70b949180a7c6&"
+              alt="Image"
+              class="image-border-white image-margin-top-small"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-content">
+        <h1 class="hero-title">
+          Welcome to <br />
+          EHS Unplugged <br />
+          Podcast
+        </h1>
+        <p class="hero-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor
+        </p>
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/15ac3a4c666103fd7e487efe0ce73d4878b98d5a8b3a182fba56417dd07f7f59?apiKey=07656cc1070a4998b9b70b949180a7c6&"
+          alt="Arrow Icon"
+          class="arrow-icon"
+          loading="lazy"
+        />
+      </section>
+    </main>
+  </body>
+</html>

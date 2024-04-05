@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Owl-carousel Cards Slider | CodingNepal</title> -->
+    <link rel="stylesheet" href="/css/podcasts.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+  </head>
+  <body>
+    <div class="carousel-wrap">
+      <div class="owl-carousel">
+        <div class="item"><img src="http://placehold.it/150x150" /></div>
+        <div class="item"><img src="http://placehold.it/150x150" /></div>
+        <div class="item"><img src="http://placehold.it/150x150" /></div>
+        <div class="item"><img src="http://placehold.it/150x150" /></div>
+        <div class="item"><img src="http://placehold.it/150x150" /></div>
+        <div class="item"><img src="http://placehold.it/150x150" /></div>
+        <div class="item"><img src="http://placehold.it/150x150" /></div>
+        <div class="item"><img src="http://placehold.it/150x150" /></div>
+        <div class="item"><img src="http://placehold.it/150x150" /></div>
+        <div class="item"><img src="http://placehold.it/150x150" /></div>
+        <div class="item"><img src="http://placehold.it/150x150" /></div>
+        <div class="item"><img src="http://placehold.it/150x150" /></div>
+      </div>
+    </div>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        navText: [
+          "<i class='fa fa-caret-left'></i>",
+          "<i class='fa fa-caret-right'></i>",
+        ],
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

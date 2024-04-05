@@ -3,53 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./css/main.css" rel="stylesheet" />
-    <title>Document</title>
+    <link href="/css/main.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>EHS Unplugged</title>
   </head>
   <body>
-    <div class="HeroSection">
-      <div class="Navigation">
-        <div class="MainNav">
-          <img class="Logo" src="/images/v240_275.png" />
-          <ul class="NavLinks">
-            <li class="nav_links">About</li>
-            <li class="nav_links">Podcasts</li>
-            <li class="nav_links">Projects</li>
-            <li class="nav_links">Appreciation</li>
-          </ul>
-        </div>
-      </div>
+    <!--  -->
 
-      <div class="HeroDecos">
-        <div class="HeroDecoRect"></div>
+    <div class="heroSection">
+      <div class="navigation">
+        <div class="mainNav">
+          <div class="logo">
+            <a href="index.html"
+              ><img class="logoIcon" src="/images/logo.png"
+            /></a>
+          </div>
+          <div class="navItems">
+            <ul class="NavLinks">
+              <li class="nav_links"><a href="#aboutSection">About Us</a></li>
+              <li class="nav_links"><a href="podcasts.html">Podcasts</a></li>
+              <li class="nav_links"><a href="projects.html"> Projects</a></li>
+              <li class="nav_links"><a href="#">Appreciation</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="HeroImgs">
-        <div class="Img1"></div>
-        <div class="Img2"></div>
-        <div class="Img3"></div>
-      </div>
+      <div class="mainHero">
+        <div class="heroLeft">
+          <!-- <div class="HeroDecoRect"></div> -->
+          <div class="heroText">
+            <div class="heroTitle">
+              Welcome to <br />EHS Unplugged<br />Podcast
+            </div>
+            <div class="heroDesc">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
+              </p>
+            </div>
+            <div class="arrowDown">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 64 64"
+                stroke-width="2.5"
+                stroke="#CACBD2"
+                fill="none"
+                class="duration-300 transform transition-all"
+                style="width: 48px; height: 58px"
+              >
+                <path
+                  d="M32.4 54.7V9.25M50.41 37.47L32.25 54.7 15.71 37.47"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
 
-      <div class="HeroText">
-        <div class="hero_title">
-          Welcome to <br />EHS Unplugged<br />Podcast
+        <div class="HeroImgs">
+          <div class="Img1"></div>
+          <div class="Img2"></div>
+          <div class="Img3"></div>
         </div>
-        <div class="hero_text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor
-        </div>
-        <div class="Arrow1"></div>
       </div>
     </div>
 
     <!-- ======================== -->
-    <div class="AboutSection">
+    <div class="AboutSection" id="aboutSection">
       <div class="AboutUs">
         <div class="abt_title">About Us</div>
         <div class="abt_text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat
+          </p>
         </div>
 
         <div class="abt_cta">Listen...</div>
@@ -62,32 +93,31 @@
       </div>
     </div>
     <!-- ======================== -->
-    <img class="QuoteBg" src="/images/v257_140.png" />
+    <!-- <img class="QuoteBg" src="/images/v257_140.png" /> -->
     <div class="PodQuote">
-      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat”
+      <p>
+        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat”
+      </p>
     </div>
     <!-- =============================== -->
     <div class="Footer">
-      <div class="FooterBg"></div>
+      <div class="contactSection">
+        <div class="Socials">
+          <div class="socials_icon"></div>
+          <div class="socials_icon"></div>
+          <div class="socials_icon"></div>
+        </div>
+        <div class="Contacts">
+          <div class="Mail">Lorem@ipsum.com</div>
+          <div class="Phone">+254-123-123-32</div>
+        </div>
+      </div>
+
       <div class="Copyright">
-        <span>ehs</span>
-        <span> </span>
-        <span>unplugged podcast</span>
-        <span> 2024</span>
-      </div>
-      <div class="Socials">
-        <div class="SocialBg"></div>
-        <div class="Ellipse1"></div>
-        <div class="Ellipse2"></div>
-        <div class="Ellipse3"></div>
-      </div>
-      <div class="Contacts">
-        <div class="ContactBg"></div>
-        <div class="Mail">Lorem@ipsum.com</div>
-        <div class="Phone">+254-123-123-32</div>
+        <p>EHS Unplugged Podcast 2024</p>
       </div>
     </div>
   </body>

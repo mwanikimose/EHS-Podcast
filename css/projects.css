@@ -52,6 +52,70 @@
     transform: translate(0px);
   }
 }
+.mainCard {
+  /* flex: 1; */
+  height: 60vh;
+  width: 24vw;
+  margin: 0 1em;
+  background: #fff;
+  border-radius: 5vh 5vh 5vh 5vh;
+  background-color: #fffefe;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: drop-in 1200ms ease 500ms backwards;
+}
+.mainCard .img {
+  height: 60%;
+  width: 100%;
+
+  /* width: 100%; */
+}
+.mainCard .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5vh;
+  border-top-right-radius: 5vh;
+  border-bottom-left-radius: 5vh;
+}
+.mainCard .content {
+  height: 45%;
+  padding: 0.2vh 0.8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #165c5a; */
+}
+.mainCard .content .title {
+  font-size: 2vh;
+  font-weight: 600;
+}
+
+.mainCard .content p {
+  font-size: 1.3vh;
+  text-align: justify;
+  /* margin: 10px 0; */
+}
+.mainCard .content .btn {
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.mainCard .content .btn button {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1vh;
+  /* padding: 5px 8px; */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.mainCard .content .btn button:hover {
+  transform: scale(0.9);
+}
 
 /* ================ */
 .projQuote {
@@ -63,8 +127,6 @@
 .projcards {
   border-radius: 60px;
   background-color: #bbbe65;
-  /* position: relative; */
-  /* flex-grow: 1; */
   font-size: 1vh;
   color: #353535;
   text-transform: lowercase;
@@ -72,4 +134,52 @@
   justify-content: center;
   width: 27%;
   padding: 55px 34px;
+}
+/* ========================== */
+/* =========================== */
+@media screen and (max-width: 480px) {
+  .projHero {
+    height: 80%;
+    top: 6.9vh;
+    flex-direction: column;
+    /* background-color: bisque; */
+  }
+  .projectsTitle p {
+    width: 90%;
+    text-align: left;
+    color: #f2f2f2;
+  }
+
+  .slider {
+    max-width: 90vw;
+    display: flex;
+    position: relative;
+  }
+  .mainCard {
+    height: 40vh;
+    width: 35vw;
+    margin-right: 1em;
+    /* background: #fff; */
+    border-radius: 5vh 5vh 5vh 5vh;
+    background-color: #fffefe;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: drop-in 1200ms ease 500ms backwards;
+  }
+  .mainCard .img {
+    height: 70%;
+    width: 100%;
+  }
+  .mainCard .content {
+    height: 20%;
+    padding: 0.2vh 0.8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #165c5a; */
+  }
+  .mainCard .content p {
+    display: none;
+  }
 }

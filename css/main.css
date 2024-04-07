@@ -357,7 +357,7 @@ a {
   width: 80%;
 }
 /* =========footer===== */
-.Footer {
+.footer {
   width: 100vw;
   height: 30vh;
   display: flex;
@@ -369,10 +369,11 @@ a {
   /* position: absolute; */
 }
 .contactSection {
-  width: 60vw;
+  width: 70vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* background-color: #df4d4d; */
 }
 
 .Copyright {
@@ -406,8 +407,6 @@ a {
   justify-content: space-evenly;
   display: flex;
   flex-direction: row;
-  /* border-radius: 50%; */
-  border-radius: 112px;
   background: linear-gradient(145deg, #1a6b69, #1f7f7d);
   box-shadow: 5px 5px 10px #1a6a68, -5px -5px 10px #208482;
   border-radius: 60vw;
@@ -416,108 +415,38 @@ a {
   /* position: absolute; */
 }
 .socials_icon {
-  width: 4em;
-  height: 4em;
+  width: 5em;
+  height: 83%;
   border-radius: 50%;
-  border-radius: 50%;
+
   box-shadow: inset 27px 27px 35px #165c5a, inset -27px -27px 35px #249290;
 }
 
 .Mail,
 .Phone {
   color: #fff;
-  font-size: 1vw;
+  font-size: 1.8vh;
   font-weight: 400;
   text-transform: lowercase;
   line-height: 40vh;
 }
 /* ==========general items =============== */
-.mainCard {
-  flex: 1;
-  height: 60vh;
-  width: 24vw;
-  margin: 0 1em;
-  background: #fff;
-  border-radius: 5vw 5vw 5vw 5vw;
-  background-color: #fffefe;
-  display: flex;
-  flex-direction: column;
-  /* padding-bottom: 1.7vw; */
-  overflow: hidden;
-  animation: drop-in 1200ms ease 500ms backwards;
-}
-.mainCard .img {
-  height: 60%;
-  width: 100%;
 
-  /* width: 100%; */
-}
-.mainCard .img img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-top-left-radius: 5vw;
-  border-top-right-radius: 5vw;
-  border-bottom-left-radius: 5vw;
-}
-.mainCard .content {
-  height: 45%;
-  padding: 0.2vw 0.8vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* background-color: #165c5a; */
-}
-.mainCard .content .title {
-  font-size: 1.2vw;
-  font-weight: 600;
-}
-/* .card .content .sub-title {
-  font-size: 20px;
-  font-weight: 600;
-  color: #e74c3c;
-  line-height: 20px;
-} */
-.mainCard .content p {
-  font-size: small;
-  text-align: justify;
-  /* margin: 10px 0; */
-}
-.mainCard .content .btn {
-  display: block;
-  text-align: left;
-  margin: 10px 0;
-}
-.mainCard .content .btn button {
-  background: #e74c3c;
-  color: #fff;
-  border: none;
-  outline: none;
-  font-size: 1vw;
-  /* padding: 5px 8px; */
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-.mainCard .content .btn button:hover {
-  transform: scale(0.9);
-}
 /* ======================= */
 /* ========================= */
 /* ========================== */
 @media screen and (max-width: 480px) {
   .navigation {
-    width: 100%;
+    width: 90%;
     top: 1vh;
     position: relative;
-    /* left: 3vw; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 3;
     position: fixed;
-    background-color: #bbbe65;
+    /* background-color: #bbbe65; */
   }
 
   .mainNav {
@@ -533,21 +462,28 @@ a {
   }
   .nav_links {
     color: white;
-    font-size: 1.6vh;
+    font-size: 1.3vh;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 2.4em;
     margin-right: 1em;
   }
   .logo {
     width: 15%;
     display: flex;
     justify-content: center;
-    background-color: #a5b8b7;
-    border-radius: 50%;
+    align-items: center;
+    /* padding-left: 0.6em; */
+    /* background-color: #a5b8b7; */
+    /* border-radius: 50%; */
   }
   .logoIcon {
-    background-color: #bbbe65;
+    width: 85%;
+    height: 90%;
+    border-radius: 50%;
+    margin: 0.2em;
+    /* background-color: #bbbe65; */
   }
+
   .mainHero {
     height: 100vh;
     background-color: none;
@@ -736,5 +672,25 @@ a {
   /* ===================== */
   .podQuote {
     height: 40vh;
+  }
+  /* =================== */
+  .Footer {
+    height: 30vh;
+
+    /* position: absolute; */
+  }
+  .contactSection {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Socials {
+    width: 45%;
+    height: 9vh;
+  }
+  .Contacts {
+    width: 45%;
+    height: 9vh;
   }
 }

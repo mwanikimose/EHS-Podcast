@@ -20,7 +20,7 @@
 }
 /* =====================} */
 .podcasts {
-  height: 120vh !important;
+  height: 160vh !important;
   overflow: visible !important;
   background: #bbbe65 !important;
 }
@@ -41,7 +41,7 @@
 .podcastsTitle .title {
   width: 80%;
   color: #f2f2f2;
-  font-size: 3vw;
+  font-size: 3vh;
 }
 .podcastsTitle p {
   width: 70%;

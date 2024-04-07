@@ -1,33 +1,193 @@
-.carousel-wrap {
-  margin: 90px auto;
-  padding: 0 5%;
+::-webkit-scrollbar {
+  width: 0.6vw;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 0.3vw;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d4d69f !important;
+  border-radius: 0.3vw;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  border: 0.5px solid #e5e7c5 !important;
+  background: #dddfb2;
+
+  transition: 0.5s;
+}
+/* =====================} */
+.podcasts {
+  height: 120vh !important;
+  overflow: visible !important;
+  background: #bbbe65 !important;
+}
+.podHero {
+  height: 80%;
+  top: 22.9vh;
+  flex-direction: column;
+  /* background-color: bisque; */
+}
+.podcastsTitle {
+  width: 100%;
+  margin-top: 1.5em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: #e74c3c; */
+}
+.podcastsTitle .title {
   width: 80%;
-  position: relative;
+  color: #f2f2f2;
+  font-size: 3vw;
 }
-
-/* fix blank or flashing items on carousel */
-.owl-carousel .item {
-  position: relative;
-  z-index: 100;
-  -webkit-backface-visibility: hidden;
+.podcastsTitle p {
+  width: 70%;
+  text-align: left;
+  color: #f2f2f2;
 }
-
-/* end fix */
-.owl-nav > div {
-  margin-top: -26px;
+.podContent {
+  /* */
+  width: 100%;
+  /* height: 110vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  /* background-color: #1a6b69; */
+}
+.podLists {
+  width: 80%;
+  max-width: 80%;
+  height: 110vh;
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+  overflow-y: scroll;
+  border-bottom-left-radius: 12.5vw;
+  background-color: #bbbe65;
+}
+.podCard {
+  position: relative;
+  width: 45vh;
+  height: 45vh;
+  /* background: rgba(255, 255, 255, 0.05); */
+  margin-bottom: 2vh;
+  /* box-shadow: 5 5px 55px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+  background: #bbbe65;
+  box-shadow: -5px -5px 18px #999c53, 5px 5px 18px #dde077;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+.podCard:hover {
+  background: #bbbe65;
+  box-shadow: inset -5px -5px 18px #999c53, inset 5px 5px 18px #dde077;
+}
+.podCard .content {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: inherit;
+  transition: 0.5s;
+}
+.podCard:hover .content {
+  transform: scale(97%);
+  transition: 0.5s;
+}
+.podCard .content .imgBx {
+  position: relative;
+  width: 100%;
+  height: 45vh;
+  overflow: hidden;
+}
+.ctaIcons {
+  list-style: none;
+  width: 30%;
+  height: 9%;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
   position: absolute;
-  top: 50%;
-  color: #cdcbcd;
+  bottom: 5vh;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #1a6b69, #1f7f7d);
+  box-shadow: 5px 5px 10px #202020;
+  border-radius: 60vw;
+  transition: 0.2s;
+}
+.ctaIcons h4 {
+  font-size: 1vw;
+  color: #fff;
+  font-weight: 300;
+  margin: 0;
+}
+.podCard:hover .ctaIcons {
+  background: #398886;
+}
+.podCard:hover .ctaIcons h4 {
+  color: aliceblue;
+}
+.ctaIcons:hover h4 {
+  display: none;
+}
+.ctaIcons:hover {
+  width: 70%;
+}
+.ctaIcons:hover li {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.cta_icon {
+  transform: translateY(40px);
+  transition: 0.4s;
+  opacity: 0;
+  /* border-radius: 50%; */
+  /* background-color: #fff; */
+  /* border-radius: 50%; */
+  /* box-shadow: inset 27px 27px 35px #165c5a, inset -27px -27px 35px #249290; */
+}
+.cta_icon a {
+  font-size: 0.7vw;
+  color: aliceblue;
 }
 
-.owl-nav i {
-  font-size: 52px;
+.podCard .content .imgBx img {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.owl-nav .owl-prev {
-  left: -30px;
+.podCard .content .contentBx h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
 }
 
-.owl-nav .owl-next {
-  right: -30px;
+.podCard .content .contentBx h3 span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
 }
+
+/* ===== */

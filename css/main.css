@@ -45,7 +45,7 @@ a {
   /* align-items: center; */
   /* justify-content: center; */
   background: linear-gradient(180deg, #2f8280 0%, #1d7775 100%);
-  border-bottom-right-radius: 15vw;
+  border-bottom-right-radius: 12vh;
   overflow: hidden;
 }
 .navigation {
@@ -69,7 +69,7 @@ a {
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   background: #2a7f7d;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 6vw;
+  border-radius: 12vh;
   display: flex;
   position: sticky;
   /* align-items: center; */
@@ -378,7 +378,7 @@ a {
 
 .Copyright {
   color: white;
-  font-size: 0.9vw;
+  font-size: 1vh;
   font-family: Space Grotesk;
   font-weight: 400;
   line-height: 4vh;
@@ -468,11 +468,12 @@ a {
     margin-right: 1em;
   }
   .logo {
-    width: 15%;
+    width: 20%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-left: 0.6em; */
+    margin: 0.2em;
     /* background-color: #a5b8b7; */
     /* border-radius: 50%; */
   }
@@ -494,7 +495,8 @@ a {
   }
   .heroLeft {
     width: 65vw;
-    height: 80vh;
+    height: 60vh;
+    top: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -504,22 +506,20 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    /* border-top-right-radius: 26em; */
-    /* border-top-left-radius: 260.5px; */
-    /* border-bottom-right-radius: 26em; */
+    border-top-right-radius: 0;
     z-index: 1;
   }
 
   .heroText {
+    /* top: 0; */
     top: 0;
-    top: 9vh;
     width: 90%;
-    height: 65%;
-    position: relative;
+    height: 100%;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding-top: 1.3vh; */
+
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -527,9 +527,8 @@ a {
     border-top-right-radius: 15vw;
     border-top-left-radius: 15vw;
     border-bottom-left-radius: 15vw;
-    box-shadow: 8px 3px 16px 0px rgba(0, 0, 0, 0.1);
-    /* justify-content: center; */
-    background: #e36363;
+    background-color: #df4d4dec;
+    /* backdrop-filter: blur(6px); */
   }
   .heroDesc {
     margin: 1em;
@@ -565,7 +564,7 @@ a {
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
+    background-position: center;
   }
   .HeroImgs div {
     width: 32%;
@@ -604,37 +603,34 @@ a {
     left: 0px;
     top: 0;
     padding-top: 6vh;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between; */
-    /* position: absolute; */
-    /* background-color: rgb(250, 8, 177); */
   }
   .aboutUs {
     width: 100%;
     height: 90vh;
     left: 0px;
     background: #bbbe65;
-    border-top-left-radius: 15vh;
-    border-bottom-left-radius: 15vh;
-    /* border-bottom-left-radius: 10em; */
+    border-top-left-radius: 0;
     border-top-right-radius: 15vh;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 15vh;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
+
     flex-direction: column;
     padding-left: 3vw;
+    z-index: 4;
   }
   .abt_text {
     width: 100%;
     color: black;
-    font-size: 1.8vh;
+    font-size: 1.6vh;
     font-weight: 347;
     line-height: 4.6vh;
+    /*  */
   }
   .abt_text p {
     width: 75%;
     padding: 0.3em;
+    z-index: 3;
     /* background-color: #1a6a68; */
   }
   .aboutQuote {
@@ -645,11 +641,10 @@ a {
     position: absolute;
     z-index: 1;
     background: #df4d4d;
-
     border-top-left-radius: 12.5vw;
     border-top-right-radius: 12.5vw;
     border-bottom-left-radius: 12.5vw;
-    z-index: 1;
+    z-index: 0;
   }
 
   .abtqImg {
@@ -675,22 +670,35 @@ a {
   }
   /* =================== */
   .Footer {
-    height: 30vh;
-
-    /* position: absolute; */
+    height: 10vh;
   }
   .contactSection {
-    width: 90vw;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   .Socials {
-    width: 45%;
-    height: 9vh;
+    width: 48%;
+    height: 6vh;
   }
   .Contacts {
-    width: 45%;
-    height: 9vh;
+    width: 48%;
+    height: 6vh;
+  }
+  .Mail,
+  .Phone {
+    color: #fff;
+    font-size: 1vh;
+    font-weight: 400;
+    text-transform: lowercase;
+    line-height: 0;
+  }
+  .socials_icon {
+    width: 5em;
+    height: 83%;
+    border-radius: 50%;
+
+    box-shadow: inset 27px 27px 35px #165c5a, inset -27px -27px 35px #249290;
   }
 }

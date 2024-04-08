@@ -20,7 +20,7 @@
 }
 /* =====================} */
 .podcasts {
-  height: 160vh !important;
+  height: 140vh !important;
   overflow: visible !important;
   background: #bbbe65 !important;
   margin-bottom: 10vh;
@@ -59,11 +59,9 @@
   align-items: center;
   justify-content: center;
   overflow: visible;
-  /* background-color: #1a6b69; */
 }
 .podLists {
-  width: 100%;
-  /* max-width: 80%; */
+  width: 80%;
   height: 110vh;
   padding: 1em;
   display: flex;
@@ -71,15 +69,15 @@
   justify-content: space-evenly;
   position: relative;
   overflow-y: scroll;
+  /* overflow-x: none; */
   border-bottom-left-radius: 12.5vw;
-  /* background-color: #1250d6; */
 }
 .podCard {
   position: relative;
   width: 45vw;
   height: 45vh;
   margin-bottom: 2vh;
-  background: #bbbe65;
+  /* background-color: #be65ba; */
   box-shadow: -5px -5px 18px #999c53, 5px 5px 18px #dde077;
   border-radius: 15px;
   display: flex;
@@ -107,11 +105,13 @@
   transition: 0.5s;
 }
 .podCard .content .imgBx {
+  object-fit: contain;
   position: relative;
-  width: 100%;
+  width: 45vw;
   height: 45vh;
   overflow: hidden;
 }
+
 .ctaIcons {
   list-style: none;
   width: 30%;
@@ -187,49 +187,50 @@
 
 /* ===== */
 @media screen and (max-width: 480px) {
+  .podcasts {
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em !important;
+  }
   .podHero {
-    width: 100%;
-    /* background-color: #1a6b69; */
-    display: flex;
-    align-items: start !important;
-    justify-content: start !important;
+    height: 80%;
+    top: 22.9vh;
+    flex-direction: column;
+    /* background-color: #be65ba; */
   }
-  .podContent {
-    /* */
-    width: 100vw;
-    /* height: 110vh; */
-    display: flex;
-    align-items: none !important;
-    /* align-content: stretch; */
-    justify-content: start;
-    overflow: visible;
-    /* background-color: #1250d6; */
-  }
+
   .podLists {
     width: 100%;
     height: 110vh;
     display: flex;
     flex-wrap: wrap;
-    /* position: relative; */
     padding: 0;
     overflow-y: scroll;
     border-bottom-left-radius: 12.5vw;
-    /* background-color: #0fdbdb; */
   }
+
   .podCard {
     position: relative;
-    width: 45%;
-    height: 45%;
-    /* background: rgba(255, 255, 255, 0.05); */
-    margin-bottom: 2vh;
-    /* box-shadow: 5 5px 55px rgba(0, 0, 0, 0.5);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
-    background: #bbbe65;
+    width: 45vw;
+    height: 20vh;
+    /* margin-bottom: 0.2vh; */
+    /* background-color: #be65ba; */
     box-shadow: -5px -5px 18px #999c53, 5px 5px 18px #dde077;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
+  }
+  .podCard .content .imgBx {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+    object-fit: contain;
+  }
+  .ctaIcons {
+    width: 30%;
+    bottom: 1vh;
+    background: #999c53;
   }
 }

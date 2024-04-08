@@ -61,7 +61,7 @@
   overflow: visible;
 }
 .podLists {
-  width: 80%;
+  width: 90%;
   height: 110vh;
   padding: 1em;
   display: flex;
@@ -74,10 +74,9 @@
 }
 .podCard {
   position: relative;
-  width: 45vw;
-  height: 45vh;
+  width: 42%;
+  height: 49vh;
   margin-bottom: 2vh;
-  /* background-color: #be65ba; */
   box-shadow: -5px -5px 18px #999c53, 5px 5px 18px #dde077;
   border-radius: 15px;
   display: flex;
@@ -100,24 +99,26 @@
   border-radius: inherit;
   transition: 0.5s;
 }
-.podCard:hover .content {
-  transform: scale(97%);
-  transition: 0.5s;
-}
+
 .podCard .content .imgBx {
-  object-fit: contain;
   position: relative;
-  width: 45vw;
-  height: 45vh;
+  width: 100%;
+  height: 49vh;
   overflow: hidden;
+  object-fit: contain;
+}
+.podCard .content .imgBx img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* object-fit: ; */
 }
 
 .ctaIcons {
-  list-style: none;
-  width: 30%;
-  height: 9%;
+  width: 25%;
+  height: 12%;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   display: flex;
   flex-direction: row;
   position: absolute;
@@ -127,14 +128,16 @@
   border-radius: 60vw;
   transition: 0.2s;
 }
+
 .ctaIcons h4 {
-  font-size: 1vh;
+  font-size: 2vh;
   color: #fff;
   font-weight: 300;
   margin: 0;
 }
 .podCard:hover .ctaIcons {
   background: #398886;
+  transition: 0.5s;
 }
 .podCard:hover .ctaIcons h4 {
   color: aliceblue;
@@ -143,29 +146,34 @@
   display: none;
 }
 .ctaIcons:hover {
-  width: 70%;
+  width: 20%;
 }
-.ctaIcons:hover li {
-  transform: translateY(0px);
-  opacity: 1;
+
+.cta_list {
+  /* height: fit-content; */
+  width: 80%;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  /* background-color: #dde077; */
 }
 .cta_icon {
   transform: translateY(40px);
   transition: 0.4s;
   opacity: 0;
 }
-.cta_icon a {
-  font-size: 0.7vh;
+.cta_icon a img {
+  height: 3vh;
+  /* font-size: 0.7vh; */
   color: aliceblue;
 }
-
-.podCard .content .imgBx img {
-  position: absolute;
-  /* top: 0;
-  left: 0; */
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.ctaIcons:hover li {
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 .podCard .content .contentBx h3 {
@@ -229,8 +237,19 @@
     object-fit: contain;
   }
   .ctaIcons {
-    width: 30%;
-    bottom: 1vh;
-    background: #999c53;
+    width: 35%;
+    height: 12%;
+    bottom: 2vh;
+  }
+  .ctaIcons:hover {
+    width: 70%;
+  }
+  .cta_icon a img {
+    height: 2vh;
+
+    color: aliceblue;
+  }
+  .ctaIcons h4 {
+    font-size: 1.4vh;
   }
 }

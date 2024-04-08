@@ -113,7 +113,6 @@ a {
 }
 .mainHero {
   height: 100vh;
-  /* background-color: #f81b9c; */
   display: flex;
   position: relative;
 }

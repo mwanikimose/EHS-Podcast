@@ -20,18 +20,17 @@
 }
 /* =====================} */
 .podcasts {
-  height: 140vh !important;
+  height: 160vh !important;
   overflow: visible !important;
-  background: #bbbe65 !important;
   margin-bottom: 10vh;
-  border-bottom-left-radius: 15vh;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='2000' preserveAspectRatio='none' viewBox='0 0 1440 2000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1080%26quot%3b)' fill='none'%3e%3crect width='1440' height='2000' x='0' y='0' fill='rgba(187%2c 190%2c 101%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c692.759C130.668%2c692.144%2c269.455%2c655%2c361.055%2c561.813C447.837%2c473.528%2c428.44%2c331.251%2c469.984%2c214.634C506.906%2c110.993%2c600.346%2c24.621%2c591.497%2c-85.044C582.519%2c-196.304%2c493.554%2c-280.04%2c423.083%2c-366.604C350.459%2c-455.813%2c286.064%2c-565.998%2c175.143%2c-596.481C64.592%2c-626.863%2c-48.642%2c-569.935%2c-154.23%2c-525.26C-249.931%2c-484.768%2c-340.485%2c-432.401%2c-405.063%2c-350.989C-467.938%2c-271.724%2c-488.678%2c-172.022%2c-512.438%2c-73.678C-538.594%2c34.585%2c-575.94%2c142.997%2c-550.613%2c251.457C-522.34%2c372.535%2c-460.266%2c487.463%2c-363.246%2c565.222C-261.041%2c647.137%2c-130.98%2c693.375%2c0%2c692.759' fill='%23abae49'%3e%3c/path%3e%3cpath d='M1440 2653.978C1560.4279999999999 2649.185 1640.718 2533.592 1749.283 2481.253 1878.088 2419.157 2056.3360000000002 2436.46 2136.628 2318.139 2216.774 2200.033 2193.766 2032.692 2144.6059999999998 1898.693 2099.467 1775.653 1981.327 1701.871 1880.031 1618.711 1794.556 1548.539 1707.032 1483.105 1600.828 1452.27 1494.854 1421.502 1385.585 1426.211 1276.6 1443.511 1154.088 1462.958 1008.562 1462.121 930.656 1558.651 852.754 1655.1770000000001 918.398 1800.075 891.165 1921.089 860.56 2057.09 711.935 2179.559 761.618 2309.807 810.605 2438.228 991.905 2444.334 1114.479 2506.521 1222.906 2561.5299999999997 1318.513 2658.814 1440 2653.978' fill='%23c9cb84'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1080'%3e%3crect width='1440' height='2000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 .podHero {
   height: 80%;
-  top: 22.9vh;
+  top: 18vh;
   flex-direction: column;
-
-  /* background-color: bisque; */
 }
 .podcastsTitle {
   width: 100%;
@@ -39,22 +38,20 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* background-color: #e74c3c; */
 }
 .podcastsTitle .title {
   width: 80%;
   color: #f2f2f2;
-  font-size: 3vh;
+  font-size: 4.5vw;
 }
 .podcastsTitle p {
   width: 70%;
   text-align: left;
+  font-size: 1.2vw;
   color: #f2f2f2;
 }
 .podContent {
-  /* */
   width: 100%;
-  /* height: 110vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,27 +66,26 @@
   justify-content: space-evenly;
   position: relative;
   overflow-y: scroll;
-  /* overflow-x: none; */
-  border-bottom-left-radius: 12.5vw;
 }
 .podCard {
   position: relative;
-  width: 42%;
-  height: 49vh;
+  width: 27%;
+  height: 50vh;
   margin-bottom: 2vh;
-  box-shadow: -5px -5px 18px #999c53, 5px 5px 18px #dde077;
-  border-radius: 15px;
+  box-shadow: -5px -5px 10px #999c53, 5px 5px 10px #dde077;
+  border-radius: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(10px);
 }
 .podCard:hover {
   background: #bbbe65;
   box-shadow: inset -5px -5px 18px #999c53, inset 5px 5px 18px #dde077;
+  transition: 0.9s;
 }
 .podCard .content {
   width: 100%;
+  height: 100%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -103,7 +99,8 @@
 .podCard .content .imgBx {
   position: relative;
   width: 100%;
-  height: 49vh;
+  height: 100%;
+  border-radius: 1.5em;
   overflow: hidden;
   object-fit: contain;
 }
@@ -115,7 +112,7 @@
 }
 
 .ctaIcons {
-  width: 25%;
+  width: 40%;
   height: 12%;
   align-items: center;
   justify-content: center;
@@ -145,29 +142,37 @@
 .ctaIcons:hover h4 {
   display: none;
 }
-.ctaIcons:hover {
+/* .ctaIcons:hover {
   width: 20%;
-}
+} */
 
 .cta_list {
-  /* height: fit-content; */
   width: 80%;
+  /* height: 80%; */
   padding: 0;
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  /* background-color: aqua; */
+}
+.cta_list a {
   align-items: center;
   justify-content: center;
   display: flex;
-  flex-direction: row;
-  position: absolute;
-  /* background-color: #dde077; */
+  /* background-color: #202020; */
 }
 .cta_icon {
+  width: 30%;
+  height: 90%;
   transform: translateY(40px);
   transition: 0.4s;
   opacity: 0;
 }
 .cta_icon a img {
-  height: 3vh;
+  height: 4.5vh;
   /* font-size: 0.7vh; */
   color: aliceblue;
 }

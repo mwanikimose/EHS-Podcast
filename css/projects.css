@@ -1,7 +1,7 @@
 .projects {
   height: 140vh !important;
   overflow: visible !important;
-  background-image: url("/images/blob-scene-haikei.svg") !important;
+  background-image: url("/images/projBG.svg") !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   margin-bottom: 10vh;
@@ -19,7 +19,7 @@
   align-items: center;
   flex-direction: column;
 }
-.projectsTitle .title {
+.projTitle {
   width: 80%;
   color: #f2f2f2;
   font-size: 4.5vw;
@@ -139,6 +139,12 @@
 /* ========================== */
 /* =========================== */
 @media screen and (max-width: 480px) {
+  .projects {
+    background-image: url("/images/projmobileBG.svg") !important;
+
+    margin-bottom: 10vh;
+    /* background-position: center; */
+  }
   .projHero {
     height: 80%;
     flex-direction: column;
@@ -148,23 +154,20 @@
     margin: 0;
     /* background-color: #e74c3c; */
   }
+  .projTitle {
+    font-size: 4vh;
+    /* background-color: #e74c3c; */
+  }
   .projectsTitle p {
     width: 90%;
-    text-align: left;
-    color: #f2f2f2;
+    font-size: 1.2vh;
   }
 
   .cardList {
-    width: 90vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* padding: 2em; */
-    /* position: relative; */
-    /* background-color: #e74c3c; */
+    padding-top: 1.5em;
   }
   .mainCard {
-    height: 40vh;
+    height: 25vh;
     width: 90vw;
     margin-bottom: 1em;
     /* background: #fff; */
@@ -179,24 +182,26 @@
   }
   .mainCard .img {
     height: 100%;
-    width: 60%;
+    width: 55%;
+  }
+
+  .mainCard .content .title {
+    font-size: 1.8vh;
   }
   .mainCard .content {
     height: 80%;
-    width: 40%;
-    padding: 0.2vh 0.8vh;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
   }
   .mainCard .content p {
     height: 70%;
     font-size: 1.3vh;
-
-    /* display: none; */
   }
   .mainCard .content .btn button {
-    font-size: 1.4vh;
+    font-size: 1.5vh;
   }
 }

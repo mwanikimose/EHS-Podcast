@@ -200,17 +200,22 @@
 
 /* ===== */
 @media screen and (max-width: 480px) {
-  .podcasts {
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em !important;
-  }
   .podHero {
     height: 80%;
     top: 22.9vh;
     flex-direction: column;
-    /* background-color: #be65ba; */
+  }
+  .podcastsTitle {
+    top: 10vh;
   }
 
+  .podcastsTitle .title {
+    width: 96%;
+    font-size: 4vh;
+  }
+  .podcastsTitle p {
+    font-size: 1.2vh;
+  }
   .podLists {
     width: 100%;
     height: 110vh;
